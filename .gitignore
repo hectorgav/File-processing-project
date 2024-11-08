@@ -1,0 +1,14 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore the virtual environment directory
+venv/
+
+# Ignore log files
+*.log
+
+# Ignore the .DS_Store file on macOS
+.DS_Store
+
+# Ignore PyTest directory
+.pytest_cache
