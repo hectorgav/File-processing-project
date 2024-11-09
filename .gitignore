@@ -12,3 +12,4 @@ venv/
 
 # Ignore PyTest directory
 .pytest_cache
+photoScans
