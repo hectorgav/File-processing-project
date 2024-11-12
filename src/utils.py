@@ -3,7 +3,7 @@ import os
 import sys
 from datetime import datetime
 from tkinter import messagebox
-from config.settings import year_range_limit  
+from config.settings import year_range_limit
 
 
 def long_path(path: str) -> str:

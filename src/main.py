@@ -8,10 +8,10 @@ from .utils import validate_directory_structure
 from .gui import run_gui
 from config.settings import PDF_SOURCE, PHOTO_SOURCE_BASE, DESTINATION_BASE
 
+
 def main():
     """Main entry point for the file processing application."""
-    setup_logging()  
-    
+    setup_logging()
     try:
         # Validate directory structure before proceeding
         if not validate_directory_structure(PDF_SOURCE, PHOTO_SOURCE_BASE, DESTINATION_BASE):
@@ -35,6 +35,7 @@ def main():
     except Exception as e:
         logging.error(f"An unexpected error occurred: {str(e)}")
         messagebox.showerror("Error", f"An unexpected error occurred: {str(e)}")
+
 
 if __name__ == "__main__":
     main()

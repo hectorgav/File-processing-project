@@ -59,7 +59,6 @@ try:
         logging.warning(f"No matching folder found for job number: {job_number}")
         return None
 
-
     def move_folder(source_folder: str, file_type: str) -> None:
         """Move the entire folder to the destination, merging if it already exists."""
         folder_name: str = os.path.basename(source_folder)
@@ -96,7 +95,6 @@ try:
         except Exception as e:
             logging.error(f"Unexpected error while moving folder {source_folder}: {str(e)}")
 
-
     def process_folders(source_path: str, file_type: str) -> Optional[bool]:
         """Process all folders in the source directory with a progress bar."""
         try:
@@ -116,7 +114,6 @@ try:
         except Exception as e:
             logging.error(f"Error processing folders: {str(e)}")
             return False  # Return False if an error occurs
-    
 except FileNotFoundError as e:
     logging.error(f"File not found error during imports: {str(e)}")
 except PermissionError as e:
